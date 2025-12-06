@@ -132,12 +132,16 @@ Open the ALB DNS in browser:
 ```
 http://<alb-dns>/
 ```
+<img width="1431" height="853" alt="Screenshot 2025-12-06 at 9 16 02 PM" src="https://github.com/user-attachments/assets/38510005-1b78-4e51-8a01-16e50198d8cd" />
+
 
 You should see:
 
 ```
 Hello from private EC2 (Go)!
 ```
+<img width="1366" height="854" alt="Screenshot 2025-12-06 at 9 16 18 PM" src="https://github.com/user-attachments/assets/10aa1432-115a-40e0-9876-ab9aff202d52" />
+
 
 Test the health check:
 
@@ -150,6 +154,8 @@ Output:
 ```
 ok
 ```
+<img width="1313" height="839" alt="Screenshot 2025-12-06 at 9 16 29 PM" src="https://github.com/user-attachments/assets/83a72132-b8e6-403e-91f4-718f81f11cef" />
+
 
 This confirms the application is successfully running behind an ALB.
 

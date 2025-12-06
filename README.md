@@ -101,7 +101,39 @@ assignment-app
 
 ---
 
-## ⚙️ Step 2 — Deploy Infrastructure with Terraform
+### Step 2 — Configure Terraform Variables
+
+Before deploying the infrastructure, you must update the Terraform variable file:
+
+📍 File: terraform/terraform.tfvars
+
+Add your own values here:
+
+aws_region           = ""
+ami_id               = ""
+s3_bucket            = ""
+s3_key               = ""
+vpc_cidr             = ""
+public_subnet_cidrs  = ["", ""]
+private_subnet_cidrs = ["", ""]
+instance_type        = ""
+asg_desired          = 
+
+📝 What each value means
+
+Variable - Description
+aws_region - AWS region where the infrastructure will be created
+ami_id - AMI for EC2 instances (Ubuntu recommended)
+s3_bucket - S3 bucket name that stores your Go binary
+s3_key - Binary filename uploaded to S3
+vpc_cidr - CIDR block for the VPC
+public_subnet_cidrs - Two public subnets for ALB
+private_subnet_cidrs - Two private subnets for EC2/ASG
+instance_type - EC2 instance size
+asg_desired - Desired number of instances in ASG
+
+
+## ⚙️ Step 3 — Deploy Infrastructure with Terraform
 
 Inside the project root:
 
@@ -125,7 +157,7 @@ After a few minutes, Terraform outputs:
 
 ---
 
-## 🌐 Step 3 — Test the Application
+### Step 4 — Test the Application
 
 Open the ALB DNS in browser:
 
@@ -161,7 +193,7 @@ This confirms the application is successfully running behind an ALB.
 
 ---
 
-## 🧹 Step 4 — Destroy Environment (Cleanup)
+### Step 5 — Destroy Environment (Cleanup)
 
 To remove all resources:
 

@@ -107,7 +107,7 @@ Inside the project root:
 
 ```bash
 cd terraform
-../scripts/deploy.sh
+./scripts/deploy.sh
 ```
 
 This script:
@@ -192,19 +192,3 @@ Health checks `/health` endpoint and routes HTTP traffic to private instances.
 * Public subnets: ALB + NAT gateway
 * Private subnets: EC2 instances
 * NAT gives EC2 outbound internet access
-
----
-
-## 📸 Screenshots to Include (For Assignment Submission)
-
-To prove everything works, include:
-
-1. Terraform folder structure
-2. Successful `terraform apply` output
-3. S3 bucket showing the Go binary
-4. ASG details (healthy instances)
-5. ALB target group showing **HEALTHY**
-6. ALB DNS working in browser
-7. systemd service status on EC2
-8. `/var/log/user-data.log` output
-9. VPC, subnets, NAT, route tables

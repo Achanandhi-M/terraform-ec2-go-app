@@ -21,7 +21,7 @@ data "aws_iam_policy_document" "ec2_assume_role" {
 # IAM Policy for S3 + SSM + Logs
 # -----------------------------
 resource "aws_iam_policy" "ec2_policy" {
-  name   = "assignment-ec2-policy"
+  name = "assignment-ec2-policy"
 
   policy = jsonencode({
     Version = "2012-10-17",

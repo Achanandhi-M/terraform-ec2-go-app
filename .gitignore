@@ -1,0 +1,62 @@
+# -------------------------
+# GO BUILD ARTIFACTS
+# -------------------------
+/app/assignment-app
+/app/assignment-app.exe
+/app/assignment-app-linux-amd64
+/app/bin/
+/app/*.out
+
+# Go module cache & workspace
+/pkg/
+/bin/
+/dist/
+/coverage.out
+
+# -------------------------
+# TERRAFORM 
+# -------------------------
+**/.terraform/
+/.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# If using terraform plan outputs
+*.plan
+
+# -------------------------
+# LOGS
+# -------------------------
+*.log
+logs/
+*.stderr
+*.stdout
+
+# -------------------------
+# SYSTEM / ENV FILES
+# -------------------------
+.env
+.env.local
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# EDITOR / IDE FILES
+# -------------------------
+.vscode/
+.idea/
+*.iml
+
+# -------------------------
+# SHELL OUTPUTS
+# -------------------------
+*.tmp

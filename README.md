@@ -1,4 +1,4 @@
-DevOps Project – Go App Deployment on AWS using Terraform
+# DevOps Project – Go App Deployment on AWS using Terraform
 
 This project demonstrates how to deploy a **Go-based web application** onto AWS using **Terraform**, **Auto Scaling Group**, **Application Load Balancer**, **private subnets**, **NAT Gateway**, **IAM roles**, and **S3 for artifacts**.
 
@@ -28,7 +28,6 @@ The app exposes:
 * `/` — root message
 * `/health` — ALB health check
 
----
 
 ## 📁 Folder Structure
 
@@ -121,7 +120,6 @@ instance_type        = ""
 asg_desired          = 1
 ```
 
----
 
 ### 📝 What Each Variable Means
 
@@ -145,7 +143,7 @@ Inside the project root:
 
 ```bash
 cd terraform
-../scripts/deploy.sh
+./scripts/deploy.sh
 ```
 
 This script:

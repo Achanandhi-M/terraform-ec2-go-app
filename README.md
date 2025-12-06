@@ -174,8 +174,7 @@ Expected output:
 ```
 Hello from private EC2 (Go)!
 ```
-
-(Screenshot placeholder)
+<img width="1366" height="854" alt="Screenshot 2025-12-06 at 9 16 18 PM" src="https://github.com/user-attachments/assets/824f4e9d-fc87-48e0-9cd9-9db54b9065fe" />
 
 Test the health endpoint:
 
@@ -188,8 +187,8 @@ Expected output:
 ```
 ok
 ```
+<img width="1313" height="839" alt="Screenshot 2025-12-06 at 9 16 29 PM" src="https://github.com/user-attachments/assets/7b5d8cc5-21af-461e-9128-6484074e101b" />
 
-(Screenshot placeholder)
 
 This confirms the application is successfully running behind the ALB.
 
